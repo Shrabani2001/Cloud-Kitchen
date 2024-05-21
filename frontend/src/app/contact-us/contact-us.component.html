@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="body">
+    <div class="container" data-aos="fade-right">
+        <div class="form-container">
+            <div class="left-container">
+                <div class="left-inner-container">
+                    <h2>Let's Chat</h2>
+                    <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                    <br>
+                    <p>Feel free to send me a message in the contact form</p>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right-inner-container">
+                    <form method="post" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+                        <h2 class="lg-view">Get in touch</h2>
+                        <p>* Required</p>
+                        <input type="text" name="name" placeholder="Name *" required ngModel />
+                        <input type="email" name="email" placeholder="Email *" required ngModel />
+                        <input type="text" name="comapany" placeholder="Company" required ngModel />
+                        <input type="phone" name="phone" placeholder="Phone" required ngModel />
+                        <textarea rows="4" name="message" placeholder="Message" required ngModel></textarea>
+                        <button>Submit</button>
+                        <input type="submit" value="SUBMIT" [disabled]="!contactForm.valid" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

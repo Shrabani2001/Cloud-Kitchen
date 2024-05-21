@@ -1,0 +1,58 @@
+/* Define styles for cart item */
+.body {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cart-item {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style image */
+.cart-item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+/* Style text content */
+.cart-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cart-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style button */
+.del {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order {
+    background-color: #35dc54;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40px;
+}

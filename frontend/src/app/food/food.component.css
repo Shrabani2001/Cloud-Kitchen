@@ -1,0 +1,74 @@
+/* Define styles for food card */
+.body {
+  margin-top: 80px;
+
+}
+
+h1 {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.food {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+
+  /* You can adjust this width based on your design */
+  display: inline-block;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+}
+
+/* Style image container */
+.image-container {
+  height: 200px;
+
+  /* Set a fixed height for the image container */
+  overflow: hidden;
+  /* Hide any overflowing content */
+}
+
+/* Style image */
+.food img {
+  max-width: 100%;
+  /* Ensures the image does not exceed the container width */
+  height: auto;
+  /* Allows the image to maintain its aspect ratio */
+}
+
+/* Style content */
+.content {
+  padding: 10px;
+}
+
+/* Style heading */
+.food h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Style price */
+.food p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Style button */
+.food button {
+  background-color: #007bff;
+  /* Blue color, you can change it as per your design */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for button */
+.food button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}

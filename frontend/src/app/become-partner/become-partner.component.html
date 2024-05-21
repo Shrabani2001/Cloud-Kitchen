@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div class="body">
+  <div class="container" data-aos="fade-up">
+    <div class="brand-title">Let's Get Cooking</div>
+    <div class="inputs">
+      <form method="post" #partnerForm="ngForm" (submit)="onSubmit(partnerForm)">
+        <label>Name</label>
+        <input type="text" placeholder="enter name" name="name" ngModel required />
+        <label>Email</label>
+        <input type="email" placeholder="example@test.com" name="email" ngModel required />
+        <label>Password</label>
+        <input type="password" placeholder="Min 6 charaters long" name="psw" ngModel required />
+        <label>phone Number</label>
+        <input type="text" placeholder="enter your phone number" name="ph" ngModel required />
+        <label>Company Details</label>
+        <textarea name="msg" cols="30" rows="5" placeholder="Write your message" ngModel required></textarea>
+        <!-- <button type="submit" routerLink="/partner-form" [disabled]="partnerForm.invalid">SUBMIT</button> -->
+        <input type="submit" value="SUBMIT" [disabled]="!partnerForm.valid" />
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.col-auto {
+    padding-inline: 40px;
+    margin-left: 22px;
+}
+
+.card-body {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.card-body .row {
+    animation: slide 20s linear infinite;
+    display: flex;
+    width: fit-content;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.social-media-logo:hover {
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1s;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}

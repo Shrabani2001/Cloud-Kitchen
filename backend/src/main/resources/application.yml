@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost/kitchen"
+    username: "root"
+    password: "shrabani"
+  sql:
+    init:
+      mode: ALWAYS
+  jpa:
+    properties:
+      hibernate.format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 1500
+

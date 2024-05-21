@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="body">
+    <h1>Cart</h1>
+
+    @for (item of cartService.getItems(); track item.id) {
+    <div class="cart-item">
+        <img [src]="item.img" alt="">
+        <div class="item-details">
+            <h3>{{item.name}}</h3>
+            <p>{{item.description}}</p>
+            <p>Price:{{item.price}}</p>
+            <button (click)="cartService.incrementQuantity(item.id)">+</button>
+            <p>Quantity:{{item.quantity}}</p>
+            <button (click)="cartService.decrementQuantity(item.id)" class="negative">-</button>
+        </div>
+        <div class="remove-button">
+            <button (click)="deleteFromCart(item)" class="del"><i class="fa fa-trash"></i>&nbsp;Remove</button>
+        </div>
+    </div>
+    }
+
+    <div>
+        <h2>Total: {{cartService.getTotal()}}</h2>
+        <button class="order" routerLink="/payment">Order</button>
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="body">
+    <div class="main">
+        <input type="checkbox" name="check" id="chk">
+
+        <div class="signup">
+            <label for="chk" arial-hidden="true">Sign up</label>
+            <form method="post" #signupform="ngForm" (submit)="onSubmit(signupform)">
+                <input type="text" name="username" placeholder="User name" required ngModel>
+                <input type="email" name="email" placeholder="Email" required ngModel>
+                <input type="password" name="password" placeholder="Password" required ngModel>
+                <input type="submit" value="Sign up" [disabled]="!signupform.valid" />
+            </form>
+        </div>
+        <div class="login">
+            <label for="chk" arial-hidden="true">Sign in</label>
+            <form method="post" #signinform="ngForm" (submit)="onLogin(signinform)">
+                <input type="email" name="email" placeholder="Email" required ngModel>
+                <input type="password" name="password" placeholder="Password" required ngModel>
+                <input type="submit" value="Sign in" [disabled]="!signinform.valid" />
+            </form>
+        </div>
+    </div>
+</div>
